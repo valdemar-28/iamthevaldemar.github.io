@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        .image-gallery {
+            display: flex;               /* Activates Flexbox layout layout */
+            justify-content: center;     /* Centers images horizontally (use 'space-between' for equal edges) */
+            align-items: center;         /* Vertically aligns images if they have different heights */
+            gap: 20px;                   /* Creates clean, uniform spacing between the image links */
+            flex-wrap: wrap;             /* Forces links to wrap nicely onto new lines on mobile devices */
+        }
+
+        /* Image sizing configuration */
+        .image-gallery a img {
+            width: 200px;                /* Controls explicit width */
+            height: 200px;               /* Controls explicit height */
+            object-fit: cover;           /* Ensures photos do not warp or stretch out of aspect ratio */
+        }
+    </style>
+</head>
+<body lang="en">
+    <h1>Hello, this is my website</h1>
+    <p>I am an artist, follow me</p>
+    <div class="image-gallery">
+        <a href="https://www.instagram.com/iamthevaldemar/">
+            <img src="vlogo_ig.png" alt="Description">
+        </a>
+        <a href="https://discord.com/users/1170058017262276668">
+            <img src="vlogo_ds.png" alt="Description">
+        </a>
+        <a href="https://soundcloud.com/iamthevaldemar">
+            <img src="vlogo_sc.png" alt="Description">
+        </a>
+        <a href="https://www.tiktok.com/@iamthevaldemar">
+            <img src="vlogo_tt.png" alt="Description">
+        </a>
+    </div>
+</body>
+</html>
